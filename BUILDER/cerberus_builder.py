@@ -153,7 +153,7 @@ def build():
     with open("HACKER/SERVER/db/tokens/tokens.txt", 'w'):
         pass
 
-    with open("VICTIM/victim.py", 'w') as f:
+    with open("VICTIM/victim.py", 'w', encoding=encoding) as f:
         f.write(VICTIM.victim)
 
 
