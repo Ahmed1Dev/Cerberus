@@ -876,7 +876,7 @@ from os import name
 
 # QUICK CHECK
 
-if name == 'nt':
+if name != 'nt':
     exit()
 
 
