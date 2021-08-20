@@ -633,6 +633,10 @@ from os.path import isdir, isfile
 from os import mkdir, listdir
 
 
+# ENCODING
+
+encoding = "utf-8"
+
 
 # FUNCTION
 
