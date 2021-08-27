@@ -34,6 +34,3 @@
 
 <p align="center">
   - billythegoat356 -
-  <br>
-  <br>
-  <img src ="https://cdn.discordapp.com/attachments/875082553298665553/877900481798742046/Cerberus.jpg">
