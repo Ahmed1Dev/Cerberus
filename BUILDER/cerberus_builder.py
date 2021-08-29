@@ -21,10 +21,6 @@ def clear():
     system("cls" if name == 'nt' else "clear")
 
 
-def col_choose() -> str:
-    return choice((Colors.red_to_yellow, Colors.yellow_to_red))
-
-
 def url_check(webhook:str) -> bool:
     try:
         return get(webhook).status_code == 200
