@@ -1,36 +1,72 @@
 -----
+
 <p align="center">
-  <img src ="https://cdn.discordapp.com/attachments/873585930529824839/877903966602670131/unknown.png">
+<img src="https://repository-images.githubusercontent.com/384839930/101bbebc-b381-454c-ab42-b94bedf1e070", width="500", height="500">
 </p>
 
 -----
 
+### <p align="center">🔱 Cerberus 🔱</p>
+
+<br><br>
 <p align="center">
-  Cerberus est une backdoor, récupérant le token Discord et les mots de passes enregistrés sur Google Chrome de la victime, puis les stockant dans une base de données.
+  <strong>Cerberus is a Discord token grabber and password stealer written in Python3.</strong>
   <br>
+  <strong>It sends all data to a TCP server (hosted by the hacker) which sort it and stock it in a database,</strong>
   <br>
-  Les informations sont transmises via un serveur TCP qui devra être hebergé par l'attaquant.
+  <strong>then send it to hacker's Discord webhook.</strong>
   <br>
-  <br>
-  <img src ="https://cdn.discordapp.com/attachments/873585930529824839/877904173310574602/unknown.png">
-  <br>
-  <br>
-  L'attaquant disposera alors d'un programme lui permettant de se connecter au serveur TCP en tant qu'administrateurs et de récupérer tous les tokens, et mots de passes.
-  <br>
+  <strong>The hacker can connect to the TCP server and get database in an easy way.</strong>
 </p>
+<br><br>
 
 -----
 
-<p align="center">
-  <strong>Attention. Merci de ne pas utiliser Cerberus pour toute action illégale, ou contre les TOS de Discord.</strong>
-  <br>
-  <strong>Ce Malware à été créé à seul but éducatif.</strong>
-  <br>
-  <br>
-  <img src ="https://cdn.discordapp.com/attachments/875082553298665553/877900488106971136/Cerber.jpg">
+### <p align="center">⭐ Features ⭐</p>
+
+<br><br>
+<strong>+ Data is displayed in a very cool way.</strong>
+<br>
+<strong>+ Hacker can get passwords sorted on websites.</strong>
+<br>
+<strong>+ Sent data is filtered, so nobody can spam and corrupt database.</strong>
+<br>
+<strong>+ The Discord webhooks are impossible to find, spam/flood and delete.</strong>
+<br>
+
+<p align="right">
+<img src="https://repository-images.githubusercontent.com/384839930/101bbebc-b381-454c-ab42-b94bedf1e070" width="250", height="250">
 </p>
+
+<br>
+<strong>- The hacker has to host the TCP server.</strong>
+<br>
+<strong>- Victim has to install extra python libraries.</strong>
+<br>
+<strong>- The connection is pretty slow.</strong>
+<br><br>
 
 -----
 
-<p align="center">
-  - billythegoat356 -
+### <p align="center">💡 Ideas 💡</p>
+
+<p align="center"><strong>Feel free to make a pull request on this repository to submit any idea!</strong</p>
+
+<br><br>
+* Make a better password stealer
+* Infect the victim's pc, and make a worm function
+<br><br>
+
+
+-----
+
+### <p align="center">📌 Disclaimer 📌</p>
+
+<br><br>
+* ***Please use this program only for educational purposes.***
+* ***It is not meant to be used in any malicious way, and I decline any responsibility for what you do with it.***
+<br><br>
+
+-----
+
+### <p align="center">billythegoat356</p>
