@@ -57,7 +57,6 @@
 * Infect the victim's pc, and make a worm function
 <br><br>
 
-
 -----
 
 ### <p align="center">📌 Disclaimer 📌</p>
