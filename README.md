@@ -18,7 +18,7 @@
   <br>
   <strong>The hacker can connect to the TCP server and get database in an easy way.</strong>
 </p>
-<br><br>
+<br>
 
 -----
 
